@@ -1,6 +1,24 @@
 #include "shell.h"
 
 /**
+ * sig_handler - Entry Point
+ *
+ * @uv: unused variable (required for function prototype)
+ *
+ * Description: handles ^C signal interuption
+ *
+ * Return: Void
+ */
+
+static void sig_handler(int uv)
+{
+	(void) uv;
+	_puts("\n($) ");
+	fflush(stdout);
+}
+
+
+/**
  * main - Entry Point
  *
  * @argc: number of arguments passed to main
@@ -20,7 +38,7 @@ int main(int argc __attribute__((unused)), char **argv, char **environment)
 
 	vars.argv = argv;
 	vars.env = make_env(environment);
-
+	signal(SIGINT, sig_handler);
 	if (!isatty(STDIN_FILENO))
 		is_pipe = 1;
 	if (is_pipe == 0)

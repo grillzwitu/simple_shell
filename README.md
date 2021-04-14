@@ -1,4 +1,4 @@
-# <a href="url"><img src="https://cdn4.iconfinder.com/data/icons/icocentre-free-icons/170/f-command_256-512.png" align="middle" width="100" height="100"></a> Simple_shell
+# <a href="url"><img src="https://cdn4.iconfinder.com/data/icons/icocentre-free-icons/170/f-command_256-512.png" align="middle" width="100" height="100"></a>   Simple_shell
 
 
 ## Table of Contents
@@ -15,7 +15,7 @@
 ## Description
 Simple_shell is a basic command line interpreter, or shell. This shell includes the basic functionality of a traditional Unix-like command line user interface. 
 Standard functions and system calls employed in simple_shell include:
-   `access, execve, exit, fork, free, fstat, getline, malloc, perror, signal, stat, wait, write.`
+   `access, execve, exit, fork, free, fstat, fflush, getline, malloc, perror, signal, stat, wait, write.`
 
 ## File Structure
 * [AUTHORS](AUTHORS) - List of contributors to this repository
@@ -39,7 +39,7 @@ Standard functions and system calls employed in simple_shell include:
   * `print_error` - prints an error message to the standard error
   * `_puts2` - prints a string to the standard error
   * `_uitoa` - converts an unsigned integer to a string
-* [memory_allocation.c](memory_allocation.c) - memory allocation functions
+* [memory_manager.c](memory_manager.c) - memory allocation functions
   * `_realloc` - a custom realloc function for arrays of pointers
 * [new_strtok.c](new_strtok.c) - custom strtok and helper functions
   * `check_match` - checks if a character matches any in a string
@@ -52,8 +52,9 @@ Standard functions and system calls employed in simple_shell include:
   * `check_for_dir` - checks if the command contains an absolute path
 * [simple_shell.c](simple_shell.c) - essential functions to the shell
   * `main` - the main function of the program
+  * `sig_handler` - handles SIGINT
 * [strfunc.c](strfunc.c) - functions related to string manipulation
-  * `_puts` - writes a string to standart output
+  * `_puts` - writes a string to standard output
   * `_strdup` - duplicates a string
   * `_strcmpr` - compares two strings
   * `_strcat` - concatenates two strings with a `/` in the middle
@@ -85,7 +86,7 @@ The simple_shell is designed to execute commands in a similar manner to sh, howe
 - [x] uses exit status
 - [x] handles comments (#)
 - [x] handles **;**
-- [ ] shell continues upon Crtl+C (**^C**)
+- [x] shell continues upon Crtl+C (**^C**)
 - [ ] custom getline type function
 - [ ] handles **&&** and **||**
 - [ ] aliases
@@ -128,7 +129,8 @@ total 80
 At this time, there are no known bugs.
 
 ## Authors
-Taremowei Appah | [GitHub](https://github.com/grillzwitu
+Taremowei Appah
+Bezawit Kifle
 
 ## License
 simple_shell is open source and free to use without restrictions or permissions.
