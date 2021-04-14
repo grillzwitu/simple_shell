@@ -109,21 +109,22 @@ Run the executable in your terminal after compiling:
 $ ./hsh
 ($) ls -l
 total 80
--rw-r--r-- 1 root root    83 Apr 12 10:23 AUTHORS
--rw-r--r-- 1 root root  6253 Apr 12 18:39 README.md
--rw-r--r-- 1 root root  3024 Apr 12 15:53 builtins.c
--rw-r--r-- 1 root root  2518 Apr 12 14:39 builtins2.c
--rw-r--r-- 1 root root   788 Apr 12 14:46 environment.c
--rw-r--r-- 1 root root  1320 Apr 12 14:53 errors.c
--rwxr-xr-x 1 root root 18863 Apr 12 17:56 hsh
--rw-r--r-- 1 root root  2395 Apr 12 18:21 man_1_simple_shell
--rw-r--r-- 1 root root   530 Apr 12 14:56 memory_allocation.c
--rw-r--r-- 1 root root  1357 Apr 12 15:00 new_strtok.c
--rw-r--r-- 1 root root  3630 Apr 12 15:53 path.c
--rw-r--r-- 1 root root  1815 Apr 12 11:31 shell.h
--rw-r--r-- 1 root root  1598 Apr 12 17:56 simple_shell.c
--rw-r--r-- 1 root root  2298 Apr 12 15:47 strfunc.c
--rw-r--r-- 1 root root   754 Apr 12 15:49 tokenize.c
+-rw-r--r-- 1 root root   118 Apr 14 15:51 AUTHORS
+-rw-r--r-- 1 root root  5750 Apr 14 16:11 README.md
+-rw-r--r-- 1 root root  3024 Apr 14 03:52 builtins.c
+-rw-r--r-- 1 root root  2518 Apr 14 03:52 builtins2.c
+-rw-r--r-- 1 root root   788 Apr 14 03:52 environment.c
+-rw-r--r-- 1 root root  1320 Apr 14 03:52 errors.c
+-rwxr-xr-x 1 root root 18923 Apr 14 16:13 hsh
+-rw-r--r-- 1 root root  2451 Apr 14 16:06 man_1_simple_shell
+-rw-r--r-- 1 root root   530 Apr 14 03:52 memory_manager.c
+-rw-r--r-- 1 root root  1357 Apr 14 03:52 new_strtok.c
+-rw-r--r-- 1 root root  3630 Apr 14 03:52 path.c
+-rw-r--r-- 1 root root  1817 Apr 14 04:13 shell.h
+-rw-r--r-- 1 root root  1459 Apr 14 15:49 simple_shell.c
+-rw-r--r-- 1 root root  2298 Apr 14 03:52 strfunc.c
+-rw-r--r-- 1 root root   754 Apr 14 03:52 tokenize.c
+($)
 ```
 ## Bugs
 At this time, there are no known bugs.
